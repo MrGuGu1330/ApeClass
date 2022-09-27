@@ -12,7 +12,7 @@
 	flex-direction: column;
 	margin-top: 60px;
 	position: relative;
-	min-height: calc(100vh - var(60px));
+	min-height: calc(100vh - (60px));
 }
 .container{
 	padding-bottom: 0!important;
@@ -223,8 +223,8 @@
 	width: 180px;
 	position: relative;
 }
-.course-box>.course-more>.course-more-item>button>i{
-	transition: 0.8s;
+.course-box>.course-more>.course-more-item>button>svg{
+	transition: linear 0.8s;
 }
 .yc{
 	opacity: 0;
@@ -448,6 +448,6 @@ p{
 	display: block;
 	margin-block-start: 1em;
 	margin-block-end: 1em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
 }
