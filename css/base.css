@@ -12,10 +12,14 @@ a span,a i{
 	color: #424c50;
 }
 html{
-	overflow: scroll;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 body{
-	overflow-x: hidden;
+	height: 100%;
+	width: 101%;
+	overflow-y: scroll;
 }
 
 /* 导航 */
@@ -30,8 +34,7 @@ body{
 	line-height: 60px;
 	margin: 0 auto;
 	position: relative;
-	width: 90%;
-	
+	width: 1140px;
 }
 .flex-column{
 	display: flex;

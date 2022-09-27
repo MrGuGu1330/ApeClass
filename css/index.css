@@ -139,9 +139,10 @@
 	font-weight: 700;
 	margin: auto 0;
 }
-.course-head>.title i{
+.course-head>.title svg{
 	margin-right: 15px;
-	color: #0556f3;;
+	color: #0556f3;
+	transform: scale(2);
 }
 .course-head>.tips{
 	font-size: 18px;
@@ -243,9 +244,10 @@
 	font-weight: 700;
 	margin: auto 0;
 }
-.course-hot-box .course-head .title i{
+.course-hot-box .course-head .title svg{
 	color: #0556f3;
 	margin-right: 15px;
+	transform: scale(2);
 }
 .course-hot-box .course-head .tips{
 	color: #666;
