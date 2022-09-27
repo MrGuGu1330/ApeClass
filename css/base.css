@@ -184,6 +184,7 @@ body{
 	position: fixed;
 	right: 10px;
 	width: 50px;
+	z-index: 999;
 }
 .elevator>.list{
 	color: #999;
