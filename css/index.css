@@ -1,0 +1,453 @@
+.bg{
+	background-color: #f8f9fb;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	margin-top: 60px;
+	position: relative;
+	min-height: calc(100vh - var(60px));
+}
+.container{
+	padding-bottom: 0!important;
+	width: 100vm;
+}
+/* 内容一 */
+.width_normal{
+	width: 1140px;
+	margin: auto;
+}
+.el-row{
+	box-sizing: border-box;
+	display: flex;
+	position: relative;
+}
+.container>.introduce-box{
+	align-items: center;
+	color: #fff;
+	flex-wrap: nowrap!important;
+	height: 350px;
+	justify-content: start;
+	margin: 50px auto;
+}
+/* box-inner部分 */
+.container>.introduce-box>.box-inner{
+	position: relative;
+}
+.container>.introduce-box>.box-inner>.introduce-1{
+	font-weight: 700;
+	padding-right: 66px;
+}
+.container>.introduce-box>.box-inner>.introduce-1>.title1{
+	font-size: 38px;
+}
+.container>.introduce-box>.box-inner>.introduce-1>.title2{
+	font-size: 28px;
+	line-height: 70px;
+}
+.container>.introduce-box>.box-inner>.introduce-2{
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 20px;
+	width: fit-content;
+}
+.container>.introduce-box>.box-inner>.introduce-2>li{
+	line-height: 40px;
+	list-style-type: none;
+	width: fit-content;
+}
+.container>.introduce-box>.box-inner>.introduce-2>li>i{
+	margin-right: 10px;
+}
+.container>.introduce-box>.box-inner>.box-join{
+	bottom: 10px;
+	display: flex;
+	width: 100%;
+}
+.container>.introduce-box>.box-inner>.box-join>.btn-join{
+	height: 48px;
+	margin: 30px 0 0;
+	width: 220px;
+}
+.container>.introduce-box>.box-inner>.box-join>.btn-join a{
+	font-size: 18px;
+}
+.el-button>span{
+	align-items: center;
+	display: inline-flex;
+}
+.el-button{
+	outline: none;
+	padding: 8px 15px;
+	text-align: center;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background-color: #fff;
+	color: #606266;
+	border: 1px solid #dcdfe6;
+}
+.el-button:focus, .el-button:hover{
+	background-color: #e6eefe;
+	color: #0556f3;
+}
+/* box-introduction部分 */
+.container>.introduce-box>.box-introduction{
+	flex: 1;
+	flex-direction: row;
+	height: 100%;
+	max-height: 350px;
+	position: relative;
+	z-index: 0;
+}
+.common-pointer-only{
+	cursor: pointer;
+}
+.el-image{
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+}
+.el-image_inner {
+    vertical-align: top;
+	width: 100%;
+	height: 100%;
+}
+.container>.bg{
+	background: url("../img/bg/bg.png") no-repeat;
+	background-size: 100% 100%;
+	height: 450px;
+	position: absolute;
+}
+/* 内容二 */
+.container>.course-box{
+	margin-top: 120px;
+	display: flex;
+	flex-direction: column;
+}
+.course-head{
+	margin-bottom: 20px;
+	display: flex;
+}
+.course-head>.title{
+	font-size: 30px;
+	font-weight: 700;
+	margin: auto 0;
+}
+.course-head>.title i{
+	margin-right: 15px;
+	color: #0556f3;;
+}
+.course-head>.tips{
+	font-size: 18px;
+	margin: auto 15px;
+	color: #666;
+}
+.container>.course-box>.course-list{
+	display: inline-flex;
+	flex-flow: wrap;
+	width: 100%;
+}
+.course-item{
+	border-radius: 12px;
+	color: #fff;
+	cursor: pointer;
+	flex-direction: column;
+	height: 270px;
+	margin: 10px;
+	padding: 20px;
+	position: relative;
+	width: 168px;
+}
+.course-item:hover{
+	transform: scale(1.02);
+}
+.box-shadows-common{
+	box-shadow: 0 2px 4px #021e544d;
+}
+.course-item>.course-title{
+	font-size: 33px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-top: 5px;
+}
+.text-row-2{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.course-item>.course-tips{
+	font-size: 14px;
+	height: 20px;
+	margin-top: 10px;
+}
+.course-item>.course-icon{
+	background-size: 100% 100%;
+	display: flex;
+	height: 100px;
+	width: 100px;
+	margin-top: 30px;
+}
+.course-item img{
+	height: 60px;
+	width: 60px;
+	margin: auto;
+	opacity: 0.6;
+}
+.course-item>.course-count{
+	bottom: 32px;
+	left: 20px;
+	position: absolute;
+}
+.course-item>.bg-bottom{
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 35px;
+}
+.course-box .course-more{
+	margin-top: 40px;
+	text-align: center;
+	width: 100%;
+}
+.course-box>.course-more>.course-more-item>button{
+	border: 1px solid #2571f1;
+	color: #2571f1;
+	font-size: 18px;
+	height: 50px;
+	width: 180px;
+	position: relative;
+}
+.course-box>.course-more>.course-more-item>button>i{
+	transition: 0.8s;
+}
+.yc{
+	opacity: 0;
+	top:-170px;
+}
+/* 内容三 */
+.container .course-hot-box{
+	margin-top: 40px;
+}
+.course-hot-box .course-head{
+	display: flex;
+	margin-bottom: 20px;
+}
+.course-hot-box .course-head .title{
+	font-size: 30px;
+	font-weight: 700;
+	margin: auto 0;
+}
+.course-hot-box .course-head .title i{
+	color: #0556f3;
+	margin-right: 15px;
+}
+.course-hot-box .course-head .tips{
+	color: #666;
+	font-size: 18px;
+	margin: auto 15px;
+}
+.course-hot-box .course-hot-list{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+.hot-class-item{
+	background-size: 100% 100%;
+	border-radius: 8px;
+	color: #fff;
+	cursor: pointer;
+	height: 150px;
+	margin-bottom: 20px;
+	position: relative;
+	width: 275px;
+}
+.hot-class-item:hover{
+	transform: scale(1.02);
+}
+.hot-class-item .content{
+	display: flex;
+	margin-left: 15px;
+	margin-top: 40px;
+}
+.hot-class-item .content>.icon{
+	width: 48px;
+	height: 48px;
+}
+.hot-class-item .content>.box-title{
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+.hot-class-item .content .box-title .section-title{
+	margin-top: 2px;
+	font-size: 20px;
+	max-width: 200px;
+}
+.text-not-wrap{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: break-all;
+}
+.hot-class-item .hot-class-study-num{
+	position: absolute;
+	left: 15px;
+	bottom: 10px;
+	font-size: 12px;
+}
+.hot-class-item .hot-class-icon-top{
+	height: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/* 内容四 */
+.box-hot-class{
+	margin: 40px auto;
+}
+.list>.item{
+	color: #000!important;
+	cursor: pointer;
+	display: flex;
+	height: 200px;
+	margin-bottom: 20px;
+}
+.list>.item:hover{
+	transform: scale(1.01);
+}
+.list>.item>.pic{
+	width: 375px;
+	border-radius: 8px 0 0 8px;
+	color: #fff;
+	display: flex;
+	font-size: 25px;
+	font-weight: 700;
+	padding-left: 25px;
+}
+.list>.item>.pic>span{
+	margin: auto 0;
+	width: 250px;
+}
+.list>.item>.pic>img{
+	height: 80px;
+	margin: auto 0;
+}
+.list>.item>.content{
+	background: #f0f6ff;
+	border-radius: 0 8px 8px 0;
+	flex: 1;
+	position: relative;
+}
+.list>.item>.content>.text{
+	margin-left: 60px;
+	margin-top: 40px;
+}
+.list>.item>.content>.text>.title{
+	font-size: 20px;
+	font-weight: 700;
+}
+.list>.item>.content>.text>.introduction{
+	color: #939393;
+	font-size: 14px;
+	line-height: 28px;
+	margin-top: 20px;
+}
+.list>.item>.content>.btn-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 60px;
+}
+.list>.item>.content>.btn-box>button{
+	color: #fff;
+	font-size: 19px;
+	height: 50px;
+	margin: 0;
+	width: 180px;
+	background: #2571f1;
+	cursor: pointer;
+}
+.list>.item>.content>.btn-box>button:hover{
+	background-color: #669cf5;
+}
+.list>.item>.content>.status{
+	background-color: #e1ecff;
+	border-radius: 2px 8px;
+	color: #2571f1;
+	font-size: 13px;
+	height: 30px;
+	font-weight: 400;
+	line-height: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 68px;
+	text-align: center;
+}
+/* 内容五 */
+.study-log-box{
+	min-height: 400px;
+	padding: 40px 0;
+}
+.study-log-list{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+.study-log-list>.study-log-item{
+	border-radius: 3px;
+	background: #fff;
+	color: #333;
+	cursor: pointer;
+	font-size: 14px;
+	height: 80px;
+	margin-bottom: 15px;
+	padding: 15px;
+	position: relative;
+	width: 245px;
+}
+.study-log-list>.study-log-item:hover{
+	transform: scale(1.02);
+}
+.study-log-list>.study-log-item>.box-top{
+	display: flex;
+	height: 40px;
+	position: relative;
+}
+.study-log-list>.study-log-item>.box-top>img{
+	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+}
+.study-log-list>.study-log-item>.box-top>span{
+	line-height: 40px;
+	margin-left: 10px;
+}
+.study-log-list>.study-log-item>.box-top>.text-time{
+	font-size: 12px;
+	opacity: .5;
+	position: absolute;
+	right: 0;
+}
+.text-not-wrap{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: break-all;
+}
+p{
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
