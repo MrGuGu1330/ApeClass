@@ -194,14 +194,19 @@ body{
 	padding: 10px 0;
 	text-align: center;
 }
-.elevator>.list>.item{
+.elevator>.list>.itemV{
 	cursor: pointer;
 	height: 40px;
 }
-.elevator .list .item.item-wx{
-	position: relative;
+.elevator>.list>.itemV:hover{
+
 }
-.elevator>.list>.item>i{
+.elevator .list .itemV.item-wx{
+	position: relative;
+	border-bottom: 1px solid #ccc;
+
+}
+.elevator>.list>.itemV>svg{
 	color: #999;
 	fill: currentColor;
 	height: 1em;
@@ -210,7 +215,7 @@ body{
 	width: 1em;
 	margin: auto;
 }
-.elevator .list .item.item-wx>img{
+.elevator .list .itemV.item-wx>img{
 	bottom: 0;
 	height: 0;
 	max-width: none;
