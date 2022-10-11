@@ -58,6 +58,14 @@ body{
 	height: 100%;
 	padding: 0 20px;
 	cursor: pointer;
+	user-select: none;
+}
+.list-item span{
+	position: relative;
+}
+.list-item span>svg{
+	position: absolute;
+	top: 20%;
 }
 .login-box{
 	display: inline-flex;

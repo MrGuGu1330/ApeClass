@@ -225,6 +225,9 @@
 	position: relative;
 }
 .course-box>.course-more>.course-more-item>button>svg{
+	position: absolute;
+	right: 19%;
+	top: 35%;
 	transition: linear 0.8s;
 }
 .yc{
