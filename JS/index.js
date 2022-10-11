@@ -20,7 +20,6 @@ function hide(){
 	icon.css("transform","rotate(0deg)")
 }
 
-
 function more(){
 	if(flag){
 		hide();
@@ -30,5 +29,6 @@ function more(){
 		flag = (!flag);
 	}
 }
+
 
 

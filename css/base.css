@@ -198,9 +198,6 @@ body{
 	cursor: pointer;
 	height: 40px;
 }
-.elevator>.list>.itemV:hover{
-
-}
 .elevator .list .itemV.item-wx{
 	position: relative;
 	border-bottom: 1px solid #ccc;
@@ -226,7 +223,11 @@ body{
 	transform-origin: 100% 100%;
 	transition: opacity .25s,transform .3s;
 }
-
+.elevator .list .itemV.item-wx>img.active{
+	transform: scale(1);
+	opacity: 1;
+	height: 120px;
+}
 /* footer */
 .footer{
 	width: 100%;
