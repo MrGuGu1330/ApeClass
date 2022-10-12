@@ -137,9 +137,12 @@ body{
 	line-height: 46px;
 	padding-left: 20px;
 }
-.box-course>.box-course-list>.active{
+.box-course>.box-course-list>div.active{
 	background-color: #c3e1ff;
 	color:#0556f3;
+}
+.box-course>.box-course-list>div.hover{
+	color: #2b324f;
 }
 .box-course>.box-course-list>.box-course-item>div>i{
 	color: red;
@@ -178,7 +181,7 @@ body{
 	position: fixed;
 	top:0;
 	width: 100%;
-	z-index: 3;
+	z-index: 10;
 	box-shadow: 0 0 10px #bababa4d;
 	background-color: #fff;
 }
@@ -209,10 +212,12 @@ body{
 .elevator .list .itemV.item-wx{
 	position: relative;
 	border-bottom: 1px solid #ccc;
-
+}
+.elevator .list .itemV.active>svg{
+	color: #555;
 }
 .elevator>.list>.itemV>svg{
-	color: #999;
+	color: #bbb;
 	fill: currentColor;
 	height: 1em;
 	overflow: hidden;
