@@ -152,10 +152,10 @@ body{
 }
 .i-icon{
 	fill: currentColor;
-	height: 1em;
+	height: 15px;
 	overflow: hidden;
 	vertical-align: -0.15em;
-	width: 1em;
+	width: 15px;
 }
 .box-course .text-to-study{
 	align-items: center;
@@ -173,6 +173,24 @@ body{
 .box-course .text-to-study span img{
 	height: 30px;
 	margin: auto 8px auto 25px;
+}
+.box-content{
+	display: flex;
+	height: calc(100% - 70px);
+}
+.box-content>.box-hot-course{
+	font-size: 14px;
+	padding: 25px;
+	position: relative;
+	width: 300px;
+}
+.box-content>.box-module{
+	background: linear-gradient(200deg,rgba(247,250,255,0.23),#ebf2ff);
+	border-radius: 0 0 6px;
+	font-size: 14px;
+	padding: 25px 0;
+	position: relative;
+	width: 300px;
 }
 
 
