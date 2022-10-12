@@ -1,7 +1,6 @@
 // 导航下拉菜单 课程中心
-$('.sub-menu').eq(0).click(function () {
-    console.log($(this))
-    $(this).css('display','')
+$('.list-item').eq(0).click(function () {
+    $('.sub-menu').eq(0).css('display','')
 })
 // 导航下拉菜单 关于
 
