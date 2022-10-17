@@ -456,3 +456,14 @@ p{
 	margin-inline-start: 0;
 	margin-inline-end: 0;
 }
+
+
+/*动画效果*/
+@keyframes course_animate_show {
+	0% {top: 0; opacity: 0}
+	100% {top: 170px; opacity: 1}
+}
+@keyframes course_animate_hide {
+	0% {top: 170px; opacity: 1}
+	100% {top: 0; opacity: 0}
+}
