@@ -45,39 +45,39 @@ insert into course_moudle values('py14','额外赠送爬虫集锦');
 
 --创建python课程章节表
 create table py_section(
-	ps_id int unique auto_increment,
+	ps_id charvar(8) unique,
 	section varchar(16),
 	title varchar(128),
 	cmid varchar(8),
 	foreign key(cmid) references course_moudle(cm_type)
 );
-insert into py_section values(null,'前言','Python环境安装','py01');
-insert into py_section values(null,'第一章','变量与数据类型','py02');
-insert into py_section values(null,'第二章','函数、运算符与数据类型的常用方法','py02');
-insert into py_section values(null,'第三章','流程控制、循环语句、异常处理、函数的高级用法','py02');
-insert into py_section values(null,'第四章','常用模块和面向对象','py03');
-insert into py_section values(null,'第五章','线程与进程、网络编程、生成器与迭代器、协程、异步IO','py03');
-insert into py_section values(null,'第六章','TCP-IP协议与抓包','py04');
-insert into py_section values(null,'第七章','数据库基础','py05');
-insert into py_section values(null,'第八章','数据库进阶','py05');
-insert into py_section values(null,'第九章','前端基础知识与爬虫','py06');
-insert into py_section values(null,'第十章','Scrapy框架基础','py07');
-insert into py_section values(null,'第十一章','Scrapy框架进阶与Redis','py07');
-insert into py_section values(null,'第十二章','分布式爬虫与Selenium框架','py07');
-insert into py_section values(null,'第十三章','Django基础','py08');
-insert into py_section values(null,'第十四章','Django进阶','py08');
-insert into py_section values(null,'第十五章','Django拾遗与博客项目','py08');
-insert into py_section values(null,'第十六章','博客项目','py08');
-insert into py_section values(null,'第十七章','Linux基础与项目部署','py09');
-insert into py_section values(null,'第十八章','JavaScript基础','py10');
-insert into py_section values(null,'第十九章','JavaScript进阶','py10');
-insert into py_section values(null,'第二十章','Chrome开发工具与js加密','py11');
-insert into py_section values(null,'第二十一章','js加密进阶与搭建Node服务','py11');
-insert into py_section values(null,'第二十二章','数据结构','py12');
-insert into py_section values(null,'第二十三章','常用算法','py12');
-insert into py_section values(null,'第二十四章','Python面试宝典','py13');
-insert into py_section values(null,'第二十五章','破解常见验证码(赠送)','py14');
-insert into py_section values(null,'第二十六章','知乎爬虫项目(赠送)','py14');
+insert into py_section values('pyc01','前言','Python环境安装','py01');
+insert into py_section values('pyc02','第一章','变量与数据类型','py02');
+insert into py_section values('pyc03','第二章','函数、运算符与数据类型的常用方法','py02');
+insert into py_section values('pyc04','第三章','流程控制、循环语句、异常处理、函数的高级用法','py02');
+insert into py_section values('pyc05','第四章','常用模块和面向对象','py03');
+insert into py_section values('pyc06','第五章','线程与进程、网络编程、生成器与迭代器、协程、异步IO','py03');
+insert into py_section values('pyc07','第六章','TCP-IP协议与抓包','py04');
+insert into py_section values('pyc08','第七章','数据库基础','py05');
+insert into py_section values('pyc09','第八章','数据库进阶','py05');
+insert into py_section values('pyc10','第九章','前端基础知识与爬虫','py06');
+insert into py_section values('pyc11','第十章','Scrapy框架基础','py07');
+insert into py_section values('pyc12','第十一章','Scrapy框架进阶与Redis','py07');
+insert into py_section values('pyc13','第十二章','分布式爬虫与Selenium框架','py07');
+insert into py_section values('pyc14','第十三章','Django基础','py08');
+insert into py_section values('pyc15','第十四章','Django进阶','py08');
+insert into py_section values('pyc16','第十五章','Django拾遗与博客项目','py08');
+insert into py_section values('pyc17','第十六章','博客项目','py08');
+insert into py_section values('pyc18','第十七章','Linux基础与项目部署','py09');
+insert into py_section values('pyc19','第十八章','JavaScript基础','py10');
+insert into py_section values('pyc20','第十九章','JavaScript进阶','py10');
+insert into py_section values('pyc21','第二十章','Chrome开发工具与js加密','py11');
+insert into py_section values('pyc22','第二十一章','js加密进阶与搭建Node服务','py11');
+insert into py_section values('pyc23','第二十二章','数据结构','py12');
+insert into py_section values('pyc24','第二十三章','常用算法','py12');
+insert into py_section values('pyc25','第二十四章','Python面试宝典','py13');
+insert into py_section values('pyc26','第二十五章','破解常见验证码(赠送)','py14');
+insert into py_section values('pyc27','第二十六章','知乎爬虫项目(赠送)','py14');
 
 
 --创建python课程表
@@ -88,3 +88,13 @@ create table py_course(
 	section_id varchar(8),
 	foreign key(section_id) references py_section(ps_id)
 );
+
+insert into py_course values(null,'从0到1学Python','','pyc01');
+insert into py_course values(null,'Python环境的安装','','pyc01');
+insert into py_course values(null,'Pycharm的安装','','pyc01');
+insert into py_course values(null,'Typora的安装','','pyc01');
+insert into py_course values(null,'Notepad++的安装','','pyc01');
+insert into py_course values(null,'Python简介','','pyc01');
+insert into py_course values(null,'Python版本介绍','','pyc01');
+insert into py_course values(null,'编译型语言和解释型语言的区别','','pyc01');
+insert into py_course values(null,'Python的解释器','','pyc01');
