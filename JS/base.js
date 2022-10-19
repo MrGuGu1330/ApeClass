@@ -1,19 +1,3 @@
-// 导航下拉菜单 课程中心
-$('.list-item').eq(0).click(function () {
-    $('.sub-menu').eq(0).css('display','')
-})
-$('.mask').click(function (){
-    $('.sub-menu').eq(0).css('display','none')
-})
-$('')
-
-// 导航下拉菜单 关于
-$('.list-item').eq(4).click(function () {
-    $('.sub-menu').eq(1).css('display','')
-})
-$('.mask').click(function (){
-    $('.sub-menu').eq(1).css('display','none')
-})
 
 
 // 侧边栏

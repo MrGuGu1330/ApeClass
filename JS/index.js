@@ -13,7 +13,7 @@ function show(){
 }
 
 function hide(){
-	arr.stop().animate({top:'-170px',opacity:'0'},500).fadeOut(500);
+	arr.stop().animate({top:'-200px',opacity:'0'},500).fadeOut(500);
 	span.innerHTML='更多课程';
 	icon.css("transform","rotate(0deg)")
 }
