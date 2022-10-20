@@ -1,5 +1,4 @@
 
-
 // 侧边栏
 $('.elevator .list .itemV.item-wx').mouseover(function () {
     $('.elevator .list .itemV.item-wx>img').addClass('active')
