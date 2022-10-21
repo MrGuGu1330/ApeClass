@@ -18,7 +18,7 @@ html{
 }
 body{
 	height: 100%;
-	width: 101%;
+	width: 102%;
 	overflow-y: scroll;
 }
 
@@ -95,8 +95,85 @@ body{
 	width: 20px;
 }
 /* 下拉菜单 */
+.sub-menu{
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+}
+.box-course{
+	background: #fff;
+	border-radius: 0 0 6px 6px;
+	box-shadow: 0 0 10px #bababa4d;
+	display: flex;
+	flex-direction: inherit;
+	position: fixed;
+	top: -440px;
+	z-index: 999;
+}
+.box-course>.box-course-list{
+	background: linear-gradient(200deg,rgba(247,250,255,.23),#ebf2ff);
+	border-radius: 0 0 0 8px;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 16px 0;
+	width: 160px;
+}
+.box-course>.box-course-list>.box-course-item{
+	color: #333;
+	cursor: pointer;
+	display: flex;
+	line-height: 46px;
+	padding-left: 20px;
+	position: relative;
+}
 
+.box-course>.box-course-list .active{
+	color: #0556f3;
+	background-color: #c3e1ff;
+}
+.box-course>.box-course-list>.box-course-item>svg{
+	margin-top: 15px;
+	color: red;
+	font-size: 20px;
+	margin-left: 5px;
+}
+.box-course .text-to-study{
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	height: 70px;
+	width: 100%;
+	box-shadow: 0 6px 30px #0000000a;
+}
 
+.box-course .text-to-study span{
+	display: flex;
+	color: #fff;
+}
+.box-course .text-to-study span>img{
+	height: 30px;
+	margin: auto 8px auto 25px;
+}
+.box-content{
+	display: flex;
+	height: calc(100% - 70px);
+}
+.box-content>.box-hot-course{
+	padding: 25px;
+	font-size: 14px;
+	width: 300px;
+	position: relative;
+}
+.box-content>.box-module{
+	background: linear-gradient(200deg,rgba(247,250,255,.23),#ebf2ff);
+	border-radius: 0 0 6px;
+	font-size: 14px;
+	padding: 25px 0;
+	position: relative;
+	width: 300px;
+}
 
 /* 吸顶导航 */
 #navFix{
