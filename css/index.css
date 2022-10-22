@@ -443,12 +443,6 @@
 	position: absolute;
 	right: 0;
 }
-.text-not-wrap{
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	word-break: break-all;
-}
 p{
 	display: block;
 	margin-block-start: 1em;

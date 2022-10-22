@@ -128,7 +128,10 @@ body{
 	padding-left: 20px;
 	position: relative;
 }
-
+.box-course>.box-course-list>.box-course-item:hover:not(.active){
+	color: #2b324d;
+	background: #c3e1ff;
+}
 .box-course>.box-course-list .active{
 	color: #0556f3;
 	background-color: #c3e1ff;
@@ -194,6 +197,21 @@ body{
 	line-height: 50px;
 	font-size: 14px;
 }
+.box-content>.box-hot-course>.text-course-title:hover{
+	color: #0556f3;
+}
+.box-content>.box-hot-course>.text-jump{
+	width: calc(100% - 50px);
+	text-align: center;
+	height: 46px;
+	line-height: 46px;
+	border-radius: 2px;
+	background: #e0ecff;
+	position: absolute;
+	bottom: 10px;
+	font-size: 16px;
+	color: #0556f3;
+}
 .box-content>.box-module{
 	background: linear-gradient(200deg,rgba(247,250,255,.23),#ebf2ff);
 	border-radius: 0 0 6px;
@@ -235,8 +253,29 @@ body{
 	padding: 0 25px;
 	position: relative;
 }
+.box-content>.box-module>.course-model-item:hover{
+	background: #f0f6ff;
+	color: #000;
+}
+
 .box-content>.box-module>.course-model-item>svg{
 	margin-left: 8px;
+}
+.box-content>.box-module>.text-jump{
+	width: calc(100% - 50px);
+	text-align: center;
+	height: 46px;
+	line-height: 46px;
+	border-radius: 2px;
+	background: #e0ecff;
+	position: absolute;
+	bottom: 10px;
+	font-size: 16px;
+	color: #0556f3;
+	margin-left: 25px;
+}
+.box-content .text-jump:hover>a{
+	color: #093791;
 }
 .box-course1{
 	background: #fff;
@@ -262,7 +301,6 @@ body{
 	padding-left: 50px;
 	color: #ffffff;
 }
-
 .box-content1{
 	width: 650px;
 	display: flex;
@@ -287,12 +325,14 @@ body{
 	font-size: 14px;
 	padding-left: 20px;
 }
+.box-content1 .title:hover{
+	color: #0556f3;
+}
 .box-content1 .title>svg{
 	color: red;
 	margin-left: 3px;
 	margin-top: 16px;
 }
-
 
 /* 吸顶导航 */
 #navFix{
