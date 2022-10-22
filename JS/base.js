@@ -18,18 +18,33 @@ $('.elevator .list .itemV.item-wx').next().mouseleave(function () {
 $('.elevator .list .itemV.item-wx').next().click(function () {
     $('body').animate({scrollTop:'0'},500)
 })
-//下拉菜单1
-$('.list-left>div').eq(0).mouseover(function () {
+// 下拉菜单1
+$('.list-left>div:first-child').mouseover(function () {
     $('.box-course').stop().animate({top:'60px',opacity:'1'},500)
 })
-$('.list-left>div').mouseleave(function () {
-    $('.box-course').stop().animate({top:'-400px',opacity:'0'},500)
+$('.list-left>div:first-child').mouseleave(function () {
+    $('.box-course').stop().animate({top:'-440px',opacity:'0'},500)
 })
 $('.box-course').mouseover(function () {
     $('.box-course').stop().animate({top:'60px',opacity:'1'},500)
 })
 $('.box-course').mouseleave(function () {
-    $('.box-course').stop().animate({top:'-400px',opacity:'0'},500)
+    $('.box-course').stop().animate({top:'-440px',opacity:'0'},500)
 })
 
 //下拉菜单2
+$('.list-left>div:last-child').mouseover(function () {
+    $('.box-course1').stop().animate({top:'60px',opacity:'1'},500)
+})
+$('.list-left>div:last-child').mouseleave(function () {
+    $('.box-course1').stop().animate({top:'-350px',opacity:'0'},500)
+})
+$('.box-course1').mouseover(function () {
+    $('.box-course1').stop().animate({top:'60px',opacity:'1'},500)
+})
+$('.box-course1').mouseleave(function () {
+    $('.box-course1').stop().animate({top:'-350px',opacity:'0'},500)
+})
+
+// course-list激活
+
