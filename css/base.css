@@ -60,6 +60,10 @@ body{
 	cursor: pointer;
 	user-select: none;
 }
+.list-left>div:hover,.list-item:hover{
+	background-color: #e0ecff;
+}
+
 .list-item span{
 	position: relative;
 }
@@ -295,7 +299,6 @@ body{
 	width: 100%;
 	box-shadow: 0 6px 30px #0000000a;
 }
-
 .box-course1 .text-to-study>span{
 	display: flex;
 	padding-left: 50px;

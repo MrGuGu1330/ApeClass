@@ -47,4 +47,6 @@ $('.box-course1').mouseleave(function () {
 })
 
 // course-list激活
-
+$('.box-course-list').on('click','.box-course-item',function () {
+    $(this).addClass('active').siblings().removeClass('active')
+})
