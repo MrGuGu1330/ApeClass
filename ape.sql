@@ -31,12 +31,13 @@ insert into course_classification values(null,'网络工程','#82DFDB 0%, #5BCDB
 --创建课程模块表
 create table course_moudle(
 	cm_type varchar(8) unique,
-	title varchar(32),
+	title varchar(32)
 );
+
 insert into course_moudle values('py01','Python环境安装');
 insert into course_moudle values('py02','Python基础知识');
 insert into course_moudle values('py03','Python进阶知识');
-insert into course_moudle values('py03','TCP-IP协议相关与抓包');
+insert into course_moudle values('py04','TCP-IP协议相关与抓包');
 insert into course_moudle values('py05','数据库相关');
 insert into course_moudle values('py06','前端基础知识与爬虫相关');
 insert into course_moudle values('py07','Scrapy框架相关');
@@ -50,7 +51,7 @@ insert into course_moudle values('py14','额外赠送爬虫集锦');
 
 --创建python课程章节表
 create table py_section(
-	ps_id charvar(8) unique,
+	ps_id varchar(8) unique,
 	section varchar(16),
 	title varchar(128),
 	cmid varchar(8),
