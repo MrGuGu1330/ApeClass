@@ -3,8 +3,6 @@ var flag = 0;
 var arr = $(".yc");
 var icon = $(".bi-chevron-double-down");
 
-
-
 function show(){
 	arr.stop().show()
 	arr.stop().animate({top:'0',opacity:'1'},800);
@@ -28,5 +26,10 @@ function more(){
 	}
 }
 
+$(function (){
+	Req.get('/v1/index/courses',data=>{
+		console.log(data)
+	})
+})
 
 
