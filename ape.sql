@@ -14,19 +14,20 @@ create table course_classification(
 	bgc varchar(32),
 	pic varchar(16),
 	bg_pic varchar(16),
-	quantiy int,
-	info varchar(64)
+	quantity int,
+	info varchar(64),
+	bg_bottom varchar(32)
 );
-insert into course_classification values(null,'python',' #64CEFF 0%, #5A9CFF 100%','v2_r5rj7n','bg_course_0',226414,'年度最热门语言');
-insert into course_classification values(null,'前端','#82DFDB 0%, #5BCDB3 100%','v2_r5rjez','bg_course_1',228110,'前端小白的基础启蒙');
-insert into course_classification values(null,'数据分析','#74CDE7 0%, #26AED6 100%','v2_r5rjh7','bg_course_2',91890,'阿里冠军团队讲解');
-insert into course_classification values(null,'软件测试','#A4A0FF 0%, #9B6DFF 100%','v2_r5rjke','bg_course_3',115906,'从小白到高级测试工程师');
-insert into course_classification values(null,'云计算','#B88AFF 0%, #9B5AFF 100%','v2_r5sr8f','bg_course_4',55863,'程序员进阶必备技能');
-insert into course_classification values(null,'小课','#88E2A8 0%, #5BCD84 100%','v2_r5sraf','bg_course_5',58760,'Python进阶课程');
-insert into course_classification values(null,'Java(新)','#6BA6FF 0%, #297EFE 100%','v2_r5srff','bg_course_6',93966,'最热门的后端语言');
-insert into course_classification values(null,'云计算(新)','#FFBA73 0%, #FDA348 100%','v2_r5sr8f','bg_course_7',9784,'运维进阶首选课程');
-insert into course_classification values(null,'Java','#64CEFF 0%, #5A9CFF 100%','v2_r5srff','bg_course_8',70403,'最热门的后端语言');
-insert into course_classification values(null,'网络工程','#82DFDB 0%, #5BCDB3 100%','v2_r5rjh7','bg_course_9',14760,'');
+insert into course_classification values(null,'python',' #64CEFF 0%, #5A9CFF 100%','v2_r5rj7n','bg_course_0',226414,'年度最热门语言','bg_course_bottom_0');
+insert into course_classification values(null,'前端','#82DFDB 0%, #5BCDB3 100%','v2_r5rjez','bg_course_1',228110,'前端小白的基础启蒙','bg_course_bottom_1');
+insert into course_classification values(null,'数据分析','#74CDE7 0%, #26AED6 100%','v2_r5rjh7','bg_course_2',91890,'阿里冠军团队讲解','bg_course_bottom_2');
+insert into course_classification values(null,'软件测试','#A4A0FF 0%, #9B6DFF 100%','v2_r5rjke','bg_course_3',115906,'从小白到高级测试工程师','bg_course_bottom_3');
+insert into course_classification values(null,'云计算','#B88AFF 0%, #9B5AFF 100%','v2_r5sr8f','bg_course_4',55863,'程序员进阶必备技能','bg_course_bottom_4');
+insert into course_classification values(null,'小课','#88E2A8 0%, #5BCD84 100%','v2_r5sraf','bg_course_5',58760,'Python进阶课程','bg_course_bottom_5');
+insert into course_classification values(null,'Java(新)','#6BA6FF 0%, #297EFE 100%','v2_r5srff','bg_course_6',93966,'最热门的后端语言','bg_course_bottom_6');
+insert into course_classification values(null,'云计算(新)','#FFBA73 0%, #FDA348 100%','v2_r5sr8f','bg_course_7',9784,'运维进阶首选课程','bg_course_bottom_7');
+insert into course_classification values(null,'Java','#64CEFF 0%, #5A9CFF 100%','v2_r5srff','bg_course_0',70403,'最热门的后端语言','bg_course_bottom_0');
+insert into course_classification values(null,'网络工程','#82DFDB 0%, #5BCDB3 100%','v2_r5rjh7','bg_course_1',14760,'','bg_course_bottom_1');
 
 --创建课程模块表
 create table course_moudle(

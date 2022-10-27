@@ -4,7 +4,7 @@ const pool = require('../pool')
 const router = express.Router()
 
 router.get('/courses',(req, res, next)=>{
-//查询所有大课
+    //查询所有大课
     pool.query('select * from course_classification',(err,r)=>{
         if(err){
             return next(err)
@@ -15,6 +15,7 @@ router.get('/courses',(req, res, next)=>{
             data:r
         })
     })
+
 })
 
 
