@@ -228,11 +228,13 @@
 	position: absolute;
 	right: 19%;
 	top: 35%;
-	transition: linear 0.8s;
 }
 .yc{
 	opacity: 0;
 	top:-170px;
+}
+.xs{
+
 }
 /* 内容三 */
 .container .course-hot-box{
