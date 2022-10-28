@@ -1,6 +1,8 @@
 const span = document.getElementById('fade-span');
 var flag = 0;
 const icon = $(".bi-chevron-double-down");
+var arr = []
+
 
 Req.get('/v1/index/courses',data=>{
 	console.log(data)
@@ -30,32 +32,34 @@ Req.get('/v1/index/courses',data=>{
 		})
 	)
 	for (i=5;i<10;i++){
-		$('.course-item').eq(i).addClass('yc').css('display','none')
+		$('.course-item').eq(i).addClass('yc').show().hide()
 	}
-	for(i=0;i<5;i++){
-		$('.course-item').eq(i).animate({top:'0',opacity:'1'},800)
-	}
+	arr = $('.yc')
+
+	// for(i=0;i<5;i++){
+	// 	$('.course-item').eq(i).animate({top:'0',opacity:'1'},800)
+	// }
 })
 
-
-function show(){
-	$('.yc').addClass('xs').removeClass('yc').stop().animate({top:'0',opacity:'1'},800).show()
+function myShow(){
+	arr.stop().show()
+	arr.stop().animate({top:'0',opacity:'1'},800)
 	span.innerHTML='关闭更多';
 	icon.css("transform","rotate(180deg)")
 }
 
-function hide(){
-	$('.xs').addClass('yc').removeClass('xs').stop().animate({top:'-200px',opacity:'0'},500).hide(500)
+function myHide(){
+	arr.stop().animate({top:'-170px',opacity:'0'},800).fadeOut(500)
 	span.innerHTML='更多课程';
 	icon.css("transform","rotate(0deg)")
 }
 
 function more(){
 	if(flag){
-		hide();
+		myHide();
 		flag = (!flag);
 	}else{
-		show();
+		myShow();
 		flag = (!flag);
 	}
 }
