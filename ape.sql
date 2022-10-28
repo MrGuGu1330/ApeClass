@@ -30,25 +30,25 @@ insert into course_classification values(null,'Java','#64CEFF 0%, #5A9CFF 100%',
 insert into course_classification values(null,'网络工程','#82DFDB 0%, #5BCDB3 100%','v2_r5rjh7','bg_course_1.png',14760,'','bg_course_bottom_1');
 
 --创建课程模块表
-create table course_moudle(
+create table course_module(
 	cm_type varchar(8) unique,
 	title varchar(32)
 );
 
-insert into course_moudle values('py01','Python环境安装');
-insert into course_moudle values('py02','Python基础知识');
-insert into course_moudle values('py03','Python进阶知识');
-insert into course_moudle values('py04','TCP-IP协议相关与抓包');
-insert into course_moudle values('py05','数据库相关');
-insert into course_moudle values('py06','前端基础知识与爬虫相关');
-insert into course_moudle values('py07','Scrapy框架相关');
-insert into course_moudle values('py08','Django框架相关');
-insert into course_moudle values('py09','服务器与项目部署');
-insert into course_moudle values('py10','JavaScript相关');
-insert into course_moudle values('py11','JS加密相关');
-insert into course_moudle values('py12','数据结构与常用算法');
-insert into course_moudle values('py13','面试内容');
-insert into course_moudle values('py14','额外赠送爬虫集锦');
+insert into course_module values('py01','Python环境安装');
+insert into course_module values('py02','Python基础知识');
+insert into course_module values('py03','Python进阶知识');
+insert into course_module values('py04','TCP-IP协议相关与抓包');
+insert into course_module values('py05','数据库相关');
+insert into course_module values('py06','前端基础知识与爬虫相关');
+insert into course_module values('py07','Scrapy框架相关');
+insert into course_module values('py08','Django框架相关');
+insert into course_module values('py09','服务器与项目部署');
+insert into course_module values('py10','JavaScript相关');
+insert into course_module values('py11','JS加密相关');
+insert into course_module values('py12','数据结构与常用算法');
+insert into course_module values('py13','面试内容');
+insert into course_module values('py14','额外赠送爬虫集锦');
 
 --创建python课程章节表
 create table py_section(
@@ -56,7 +56,7 @@ create table py_section(
 	section varchar(16),
 	title varchar(128),
 	cmid varchar(8),
-	foreign key(cmid) references course_moudle(cm_type)
+	foreign key(cmid) references course_module(cm_type)
 );
 insert into py_section values('pyc01','前言','Python环境安装','py01');
 insert into py_section values('pyc02','第一章','变量与数据类型','py02');
