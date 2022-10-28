@@ -18,5 +18,22 @@ router.get('/courses',(req, res, next)=>{
 
 })
 
+router.get('/sub_py',(req, res,next)=>{
+    pool.query('select * from course_classification' +
+        'select * from py_course limit 5 ;' +
+        'select * from course_module where cm_type like "py%%" limit 5 ',(err,r)=>{
+        if(err){
+            return next(err)
+        }
+        res.send({
+            code:200,
+            msg:'Python',
+            data:r
+        })
+
+
+    })
+
+})
 
 module.exports = router
