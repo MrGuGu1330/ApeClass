@@ -18,10 +18,9 @@ router.get('/courses',(req, res, next)=>{
 
 })
 
-router.get('/sub_py',(req, res,next)=>{
-    pool.query('select * from course_classification' +
-        'select * from py_course limit 5 ;' +
-        'select * from course_module where cm_type like "py%%" limit 5 ',(err,r)=>{
+router.get('/sub',(req, res,next)=>{
+    pool.query('select * from course_classification;' +
+        'select * from py_course',[obj.cc_id],(err,r)=>{
         if(err){
             return next(err)
         }
@@ -30,7 +29,6 @@ router.get('/sub_py',(req, res,next)=>{
             msg:'Python',
             data:r
         })
-
 
     })
 

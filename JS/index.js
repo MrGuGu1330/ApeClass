@@ -36,11 +36,6 @@ Req.get('/v1/index/courses',data=>{
 	}
 	arr = $('.yc')
 
-	// for(i=0;i<5;i++){
-	// 	$('.course-item').eq(i).animate({top:'0',opacity:'1'},800)
-	// }
-
-
 })
 
 

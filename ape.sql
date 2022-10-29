@@ -18,7 +18,7 @@ create table course_classification(
 	info varchar(64),
 	bg_bottom varchar(32)
 );
-insert into course_classification values(null,'python',' #64CEFF 0%, #5A9CFF 100%','v2_r5rj7n','bg_course_0.png',226414,'年度最热门语言','bg_course_bottom_0');
+insert into course_classification values(null,'Python',' #64CEFF 0%, #5A9CFF 100%','v2_r5rj7n','bg_course_0.png',226414,'年度最热门语言','bg_course_bottom_0');
 insert into course_classification values(null,'前端','#82DFDB 0%, #5BCDB3 100%','v2_r5rjez','bg_course_1.png',228110,'前端小白的基础启蒙','bg_course_bottom_1');
 insert into course_classification values(null,'数据分析','#74CDE7 0%, #26AED6 100%','v2_r5rjh7','bg_course_2.png',91890,'阿里冠军团队讲解','bg_course_bottom_2');
 insert into course_classification values(null,'软件测试','#A4A0FF 0%, #9B6DFF 100%','v2_r5rjke','bg_course_3.png',115906,'从小白到高级测试工程师','bg_course_bottom_3');
@@ -105,3 +105,5 @@ insert into py_course values(null,'Python简介','','pyc01');
 insert into py_course values(null,'Python版本介绍','','pyc01');
 insert into py_course values(null,'编译型语言和解释型语言的区别','','pyc01');
 insert into py_course values(null,'Python的解释器','','pyc01');
+
+--创建
