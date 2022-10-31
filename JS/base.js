@@ -1,3 +1,5 @@
+let i = 0
+
 // 侧边栏
 $('.elevator .list .itemV.item-wx').mouseover(function () {
     $('.elevator .list .itemV.item-wx>img').addClass('active')
@@ -22,13 +24,13 @@ $('.elevator .list .itemV.item-wx').next().click(function () {
 $('.list-left>div:first-child').mouseover(function () {
     $('.box-course').stop().animate({top:'60px',opacity:'1'},500)
 })
-$('.list-left>div:first-child').mouseleave(function () {
+.mouseleave(function () {
     $('.box-course').stop().animate({top:'-440px',opacity:'0'},500)
 })
 $('.box-course').mouseover(function () {
     $('.box-course').stop().animate({top:'60px',opacity:'1'},500)
 })
-$('.box-course').mouseleave(function () {
+.mouseleave(function () {
     $('.box-course').stop().animate({top:'-440px',opacity:'0'},500)
 })
 
@@ -36,17 +38,19 @@ $('.box-course').mouseleave(function () {
 $('.list-left>div:last-child').mouseover(function () {
     $('.box-course1').stop().animate({top:'60px',opacity:'1'},500)
 })
-$('.list-left>div:last-child').mouseleave(function () {
+.mouseleave(function () {
     $('.box-course1').stop().animate({top:'-350px',opacity:'0'},500)
 })
 $('.box-course1').mouseover(function () {
     $('.box-course1').stop().animate({top:'60px',opacity:'1'},500)
 })
-$('.box-course1').mouseleave(function () {
+.mouseleave(function () {
     $('.box-course1').stop().animate({top:'-350px',opacity:'0'},500)
 })
 
 // course-list激活
 $('.box-course-list').on('click','.box-course-item',function () {
     $(this).addClass('active').siblings().removeClass('active')
+    i = ($(this).index()+1)
 })
+

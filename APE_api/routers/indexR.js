@@ -18,20 +18,33 @@ router.get('/courses',(req, res, next)=>{
 
 })
 
-router.get('/sub',(req, res,next)=>{
-    pool.query('select * from course_classification;' +
-        'select * from py_course',[obj.cc_id],(err,r)=>{
+router.get('/left/:sub_id',(req, res,next)=>{
+    const obj = req.params
+    pool.query('select * from sub_left where sub_id=?',[obj.sub_id],(err,r)=>{
         if(err){
             return next(err)
         }
         res.send({
             code:200,
-            msg:'Python',
+            msg:'下拉菜单左',
             data:r
         })
-
     })
 
 })
 
+router.get('/right/:sub_id',(req, res,next)=>{
+    const obj = req.params
+    pool.query('select * from sub_right where sub_id=?',[obj.sub_id],(err,r)=>{
+        if(err){
+            return next(err)
+        }
+        res.send({
+            code:200,
+            msg:'下拉菜单右',
+            data:r
+        })
+    })
+
+})
 module.exports = router

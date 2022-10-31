@@ -35,7 +35,6 @@ Req.get('/v1/index/courses',data=>{
 		$('.course-item').eq(i).addClass('yc').show().hide()
 	}
 	arr = $('.yc')
-
 })
 
 
