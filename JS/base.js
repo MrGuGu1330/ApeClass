@@ -4,8 +4,7 @@ let i = 0
 $('.elevator .list .itemV.item-wx').mouseover(function () {
     $('.elevator .list .itemV.item-wx>img').addClass('active')
     $('.elevator .list .itemV.item-wx').addClass('active')
-})
-$('.elevator .list .itemV.item-wx').mouseleave(function () {
+}).mouseleave(function () {
     $('.elevator .list .itemV.item-wx>img').removeClass('active')
     $('.elevator .list .itemV.item-wx').removeClass('active')
 })
