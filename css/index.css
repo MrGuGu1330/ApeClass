@@ -228,6 +228,8 @@
 	position: absolute;
 	right: 19%;
 	top: 35%;
+	transition: 1.2s ;
+
 }
 .yc{
 	opacity: 0;

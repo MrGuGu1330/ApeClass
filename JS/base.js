@@ -1,4 +1,19 @@
-let i = 0
+let i = 1
+
+//预加载下拉菜单
+Req.get('/v1/index/courses',data=>{
+    $('').html(
+        data.data.map(item => {
+            const {bgc,title,pic} = item
+        })
+    )
+})
+Req.get(`/v1/index/left/${i}`,data=>{
+    console.log(data)
+})
+Req.get(`/v1/index/left/${i}`,data=>{
+    console.log(data)
+})
 
 // 侧边栏
 $('.elevator .list .itemV.item-wx').mouseover(function () {
@@ -51,5 +66,13 @@ $('.box-course1').mouseover(function () {
 $('.box-course-list').on('click','.box-course-item',function () {
     $(this).addClass('active').siblings().removeClass('active')
     i = ($(this).index()+1)
+    // console.log(i)
+
+    Req.get(`/v1/index/left/${i}`,data=>{
+        console.log(data)
+    })
+    Req.get(`/v1/index/right/${i}`,data=>{
+        console.log(data)
+    })
 })
 
