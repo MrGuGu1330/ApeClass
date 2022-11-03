@@ -1,17 +1,45 @@
 let i = 1
 
 //预加载下拉菜单
-Req.get('/v1/index/courses',data=>{
-    $('').html(
+Req.get(`/v1/base/course/${i}`,data=>{
+    $('.box-course').append(
         data.data.map(item => {
             const {bgc,title,pic} = item
+            return`
+                <div id="subTitle">
+                    <div>
+                        <div style="height: 100%;">
+                            <a href="" class="text-to-study common-pointer-only" style="background: linear-gradient(180deg,${bgc});">
+                                <span>
+                                    <img src="/img/covers/${pic}.png" alt="">
+                                    开始学习 ${title}
+                                </span>
+                            </a>
+                            <div class="box-content">
+                                <div class="box-hot-course">
+                                    <div class="text-title">
+                                        <div></div>
+                                        <span>热门课程</span>
+                                    </div>
+                                        
+                                    <div class="text-jump common-pointer-only">
+                                        <a href="">所有${title}课程</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+            `
         })
     )
 })
-Req.get(`/v1/index/left/${i}`,data=>{
+Req.get(`/v1/base/left/${i}`,data=>{
     console.log(data)
+
 })
-Req.get(`/v1/index/left/${i}`,data=>{
+Req.get(`/v1/base/left/${i}`,data=>{
     console.log(data)
 })
 
@@ -68,11 +96,42 @@ $('.box-course-list').on('click','.box-course-item',function () {
     i = ($(this).index()+1)
     // console.log(i)
 
-    Req.get(`/v1/index/left/${i}`,data=>{
+    Req.get(`/v1/base/course/${i}`,data=>{
+        $('#subTitle').html(
+            data.data.map(item => {
+                const {bgc,title,pic} = item
+                return`
+                    <div style="height: 100%;">
+                        <a href="" class="text-to-study common-pointer-only" style="background: linear-gradient(180deg,${bgc});">
+                            <span>
+                                <img src="/img/covers/${pic}.png" alt="">
+                                开始学习 ${title}
+                            </span>
+                        </a>
+                        <div class="box-content">
+                            <div class="box-hot-course">
+                                <div class="text-title">
+                                    <div></div>
+                                    <span>热门课程</span>
+                                </div>
+                                <div class="text-jump common-pointer-only">
+                                    <a href="">所有${title}课程</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            })
+        )
+    })
+
+
+    Req.get(`/v1/base/left/${i}`,data=>{
         console.log(data)
     })
-    Req.get(`/v1/index/right/${i}`,data=>{
+    Req.get(`/v1/base/right/${i}`,data=>{
         console.log(data)
     })
 })
 
+// console.log($('#subTitle'))

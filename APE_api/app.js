@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const indexRouter = require('./routers/indexR')
-
+const baseRouter = require('./routers/baseR')
 
 
 const app = express()
@@ -16,7 +16,7 @@ app.use(express.urlencoded({
 app.use(cors())
 
 app.use('/v1/index',indexRouter)
-
+app.use('/v1/base',baseRouter)
 
 // 错误处理中间件
 app.use( (err,req,res)=>{
