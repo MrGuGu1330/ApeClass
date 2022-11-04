@@ -49,7 +49,6 @@ Req.get(`/v1/base/course/${i}`,data=>{
     )
 })
 Req.get(`/v1/base/left/${i}`,data=>{
-    // console.log(data)
     $('#courseTitle').html(
         data.data.map(item => {
             const {title} = item
@@ -60,7 +59,6 @@ Req.get(`/v1/base/left/${i}`,data=>{
     )
 })
 Req.get(`/v1/base/right/${i}`,data=>{
-    // console.log(data)
     $('#moduleTitle').html(
         data.data.map(item => {
             const {title} = item
@@ -99,9 +97,9 @@ $('.elevator .list .itemV.item-wx').next().click(function () {
 $('.list-left>div:first-child').mouseover(function () {
     $('.box-course').stop().animate({top:'60px',opacity:'1'},500)
 })
-// .mouseleave(function () {
-//     $('.box-course').stop().animate({top:'-440px',opacity:'0'},500)
-// })
+.mouseleave(function () {
+    $('.box-course').stop().animate({top:'-440px',opacity:'0'},500)
+})
 $('.box-course').mouseover(function () {
     $('.box-course').stop().animate({top:'60px',opacity:'1'},500)
 })
@@ -175,7 +173,6 @@ $('.box-course-list').on('click','.box-course-item',function () {
 
 
     Req.get(`/v1/base/left/${i}`,data=>{
-        // console.log(data)
         $('#courseTitle').html(
             data.data.map(item => {
                 const {title} = item
@@ -186,7 +183,6 @@ $('.box-course-list').on('click','.box-course-item',function () {
         )
     })
     Req.get(`/v1/base/right/${i}`,data=>{
-        // console.log(data)
         $('#moduleTitle').html(
             data.data.map(item => {
                 const {title} = item
