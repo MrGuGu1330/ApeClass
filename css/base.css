@@ -194,14 +194,14 @@ body{
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 }
-.box-content>.box-hot-course>.text-course-title{
+.box-content>.box-hot-course .text-course-title{
 	color: #000;
 	cursor: pointer;
 	height: 50px;
 	line-height: 50px;
 	font-size: 14px;
 }
-.box-content>.box-hot-course>.text-course-title:hover{
+.box-content>.box-hot-course .text-course-title:hover{
 	color: #0556f3;
 }
 .box-content>.box-hot-course>.text-jump{
@@ -246,7 +246,7 @@ body{
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 }
-.box-content>.box-module>.course-model-item{
+.box-content>.box-module .course-model-item{
 	align-items: center;
 	cursor: pointer;
 	color: #333;
@@ -257,7 +257,12 @@ body{
 	padding: 0 25px;
 	position: relative;
 }
-.box-content>.box-module>.course-model-item:hover{
+
+#moduleTitle,#courseTitle{
+	height: 344px;
+}
+
+.box-content>.box-module .course-model-item:hover{
 	background: #f0f6ff;
 	color: #000;
 }
